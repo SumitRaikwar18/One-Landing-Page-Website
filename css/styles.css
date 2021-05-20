@@ -1,0 +1,476 @@
+/* IMPORT FONT FROM GOOGLEFONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* START WRITING CODE HERE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #FBF9F7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4em;
+    line-height: 1.1em;
+    margin-bottom: 70px;
+    font-family: 'Roboto slab', sans-serif;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.6em;
+    margin-bottom: 0;
+    font-family: 'Roboto slab', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto slab', sans-serif;
+}
+
+p {
+    color: #181818;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+}
+
+::selection {
+    background: #FD5052;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #FD5052;
+    color: #fff;
+}
+
+.btn {
+    background: #FD5052;
+    padding: 12px 35px;
+    color: #fff;
+    outline: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    -webkit-box-shadow: 9px 9px 0px 0px rgba(253, 80, 82, 0.2);
+    -moz-box-shadow: 9px 9px 0px 0px rgba(253, 80, 82, 0.2);
+    box-shadow: 9px 9px 0px 0px rgba(253, 80, 82, 0.2);
+}
+
+.btn:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: .3s ease-in;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.top hr {
+    border: none;
+    border-bottom: 2px solid #FD5052;
+    width: 60px;
+}
+
+
+/* HEADER */
+
+header {
+    height: 800px;
+    margin-bottom: 30px;
+}
+
+menu {
+    margin: 0 0 40px 0;
+    background-color: #fff;
+    padding: 6px 0;
+}
+
+.menuIcon {
+    display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    margin: 0 12px;
+    font-size: 14px;
+    color: #150f17;
+}
+
+nav li a:hover {
+    color: #FD5052;
+}
+
+nav li a:active,
+nav li a:focus {
+    color: #FD5052;
+    border-bottom: 1px solid #FD5052;
+}
+
+#hero .left {
+    width: 500px;
+    margin-top: 60px;
+    align-self: flex-start;
+}
+
+#hero .right {
+    position: relative;
+}
+
+#hero .right {
+    background: url('../images/iphone_background.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 510px;
+    padding: 50px 100px;
+}
+
+#hero .right img.phone {
+    width: 320px;
+    margin: auto;
+}
+
+#hero .right .overlay1 {
+    width: 130px;
+    position: absolute;
+    top: 200px;
+    right: 80px;
+}
+
+#hero .right .overlay2 {
+    width: 130px;
+    position: absolute;
+    bottom: 220px;
+    left: 43px;
+}
+
+
+/* OURSERVICE */
+
+.ourService {
+    margin-top: 100px;
+}
+
+.ourService .block {
+    width: 250px;
+    text-align: center;
+}
+
+.ourService img {
+    width: 70px;
+    padding: 1px;
+    background-color: #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 23px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: 5px 5px 23px 0px rgba(50, 50, 50, 0.2);
+    box-shadow: 5px 5px 23px 0px rgba(50, 50, 50, 0.2);
+}
+
+
+/* ABOUT */
+
+.about .left img {
+    width: 500px;
+}
+
+.about .right {
+    width: 450px;
+}
+
+.about small {
+    color: #FD5052;
+}
+
+.about .right h2 {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.about .line2 {
+    margin-bottom: 50px;
+}
+
+.about a.btn {
+    padding: 12px 20px;
+}
+
+
+/* LATEST NEWS */
+
+.latestNews .flex {
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.latestNews img {
+    width: 100%;
+}
+
+.latestNews .right h2 {
+    width: 60%;
+}
+
+.latestNews a {
+    color: hsl(359, 98%, 65%);
+}
+
+
+/* SUBSCRIBE */
+
+.subscribe .container {
+    background: #534258;
+    padding: 70px 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subscribe h2 {
+    width: 250px;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    line-height: 40px;
+}
+
+.subscribe form input {
+    width: 280px;
+    padding: 15px 0 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+::placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+}
+
+::-moz-placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: #a1a1a1;
+    font-size: 15px;
+}
+
+.subscribe .btn {
+    border: none;
+    outline: none;
+    margin-left: -10px;
+    cursor: pointer;
+    padding: 15px 30px;
+    box-shadow: none;
+}
+
+
+/* FOOTER */
+
+footer .container {
+    border-top: 1px solid #b1acad;
+    padding: 40px 0;
+}
+
+footer .socialIcons img {
+    width: 40px;
+    padding: 10px;
+    background-color: rgba(253, 80, 82, 0.3);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 95%;
+    }
+    #hero .right {
+        background-repeat: no-repeat;
+        background-size: 470px;
+        padding: 50px 80px;
+    }
+    #hero .right img.phone {
+        width: 300px;
+        margin: auto;
+    }
+    #hero .right .overlay1 {
+        width: 100px;
+        top: 190px;
+        right: 80px;
+    }
+    #hero .right .overlay2 {
+        width: 100px;
+        bottom: 230px;
+        left: 45px;
+    }
+    .about .left img {
+        width: 350px;
+    }
+    .latestNews .flex {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        width: 80%;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+    header {
+        height: 100%;
+    }
+    menu {
+        margin: 0;
+    }
+    .mobile.menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #FF6566;
+        height: 100%;
+        width: 50%;
+        z-index: 10;
+        padding-top: 50px;
+        transform: translateX(100%);
+        transition: all .4s ease-in-out;
+    }
+    .menuIcon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 25px;
+    }
+    nav ul li a {
+        font-size: 25px;
+        color: #fff;
+    }
+    .menuIcon.close {
+        position: absolute;
+        top: 10px;
+        right: 10%;
+        color: #fff;
+    }
+    .menuShown .mobile.menu {
+        transform: translateX(0);
+    }
+    h1 {
+        margin-top: 0px;
+    }
+    #hero .left {
+        width: 100%;
+    }
+    .ourService {
+        margin-top: 0px;
+    }
+    .ourService .block {
+        width: 100%;
+    }
+    .about img,
+    .latestNews img {
+        width: 100%;
+    }
+    .latestNews .block {
+        margin-bottom: 20px;
+    }
+    .subscribe form input {
+        width: 100%;
+    }
+    .subscribe .btn {
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 2.8em;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .mobile.menu {
+        width: 80%;
+    }
+    #hero .right {
+        background-size: 100%;
+        background-position: center center;
+        padding: 0;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hero .right img.phone {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    #hero .right .overlay1 {
+        width: 100px;
+        top: 190px;
+        right: 50px;
+    }
+    #hero .right .overlay2 {
+        width: 100px;
+        bottom: 30px;
+        left: 200px;
+    }
+    .about .right h2 {
+        width: 100%;
+    }
+}
